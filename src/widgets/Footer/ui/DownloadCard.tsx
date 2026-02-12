@@ -50,13 +50,15 @@ export const DownloadCard = () => {
       <Logo src="/casino-royale.svg" alt="Casino Royale"/>
 
       <DownloadInfo>
-        <Title variant="h4">{t("open_game")}</Title>
+        <Title variant="h4" sx={{
+          fontWeight: 600,
+        }}>{t("download_game")}</Title>
         <Subtitle variant="body2">
           {t("play_anywhere")}
         </Subtitle>
 
         <BaseButton
-          label={t("download_game")}
+          label={t("install_app")}
           icon={<img src="/download.svg" alt="" style={{width: 24}}/>}
           sx={{
             mt: '8px',

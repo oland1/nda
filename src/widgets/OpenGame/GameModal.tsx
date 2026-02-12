@@ -55,7 +55,7 @@ export const GameModal = memo(({open, onClose, url}: GameModalProps) => {
     <StyledDialog
       open={open}
       onClose={onClose}
-      maxWidth="xl"
+      fullScreen
       keepMounted={false}
     >
       <IconButton

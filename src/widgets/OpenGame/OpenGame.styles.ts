@@ -53,10 +53,8 @@ export const SlotImage = styled('img')({
 export const StyledDialog = styled(Dialog)({
   '& .MuiPaper-root': {
     backgroundColor: '#000',
-    width: '90vw',
-    maxWidth: '1440px',
-    height: '90vh',
-    borderRadius: '16px',
+    width: '100vw',
+    height: '100vh',
     overflow: 'hidden',
     position: 'relative',
   }
