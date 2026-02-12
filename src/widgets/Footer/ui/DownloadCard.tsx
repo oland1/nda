@@ -32,10 +32,14 @@ const DownloadInfo = styled(Box)({
   gap: '6px',
 });
 
-const Title = styled(Typography)({
+const Title = styled(Typography)(({theme}) => ({
   color: 'white',
-  fontSize: '28px',
-});
+  fontSize: '32px',
+  fontWeight: 700,
+  [theme.breakpoints.down('sm')]: {
+    fontSize: '24px',
+  }
+}));
 
 const Subtitle = styled(Typography)({
   color: 'rgba(255, 255, 255, 0.5)',
@@ -50,9 +54,7 @@ export const DownloadCard = () => {
       <Logo src="/casino-royale.svg" alt="Casino Royale"/>
 
       <DownloadInfo>
-        <Title variant="h4" sx={{
-          fontWeight: 600,
-        }}>{t("download_game")}</Title>
+        <Title variant="h4">{t("download_game")}</Title>
         <Subtitle variant="body2">
           {t("play_anywhere")}
         </Subtitle>
